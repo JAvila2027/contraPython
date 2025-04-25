@@ -30,7 +30,7 @@ def guardar_user(usuario,contraseña):
         return False
     contraseña_encriptada=encriptar_contraseña(contraseña)
     with open(ruta_archivo,"a") as archivo:
-        archivo.write(f"usuario={usuario} contraseña={contraseña_encriptada}")
+        archivo.write(f"usuario={usuario} contraseña={contraseña_encriptada}\n")
     return True
 def ver_usuarios():
     """
